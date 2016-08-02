@@ -43,3 +43,12 @@ class Radio():
 				self.emisora_FM =107
 			else :
 				self.emisora_FM-=0.5
+	def cambiar(self):
+		if self.en_FM==True:
+			self.en_FM=False
+		else :
+			self.en_FM=True
+				
+				
+
+					
