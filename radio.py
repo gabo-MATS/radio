@@ -11,12 +11,12 @@ class Radio():
 	def apagar(self):
 		self.encendido=False
 	def subir_volumen(self):
-		if volumen >=100:
+		if self.volumen >=100:
 			self.volumen =100
 		else :
 			self.volumen+=5
 	def bajar_volumen(self):
-		if volumen <=0:
+		if self.volumen <=0:
 			self.volumen =0
 		else :
 			self.volumen-=5
@@ -34,7 +34,7 @@ class Radio():
 
 	def bajar_emisora(self):
 		if not self.en_FM:
-			if self.emisora_AM <=3300:
+			if self.emisora_AM <=300:
 				self.emisora_AM =1300
 			else :
 				self.emisora_AM-=40	
